@@ -166,7 +166,7 @@ Convert your RGB to HEX without any libs!
 
 ```jsx
 const rgb2hex = ([r, g, b]) =>
-  `#${(1 << 24) + (r << 16) + (g << 8) + b}`.toString(16).substr(1);
+  '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).substr(1);
 
 rgb2hex([76, 11, 181]);
 // #4c0bb5
